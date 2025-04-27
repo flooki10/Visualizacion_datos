@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualización de Datos - Emisiones CO2</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 25px;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #2980b9;
+      }
+      .chart-container {
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .chart-container h3 {
+        margin-top: 0;
+        color: #16a085;
+      }
+      .chart-description {
+        font-style: italic;
+        color: #7f8c8d;
+        margin-bottom: 15px;
+      }
+      .header-info {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #7f8c8d;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+      }
+      iframe {
+        border: none;
+        margin: 0 auto;
+        display: block;
+      }
+      .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 768px) {
+        .two-columns {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Visualización de Datos - Emisiones de CO2</h1>
+
+    <div class="header-info">
+      <p><strong>Nombre completo:</strong> Walid Sabhi</p>
+      <p>
+        <strong>URL del proyecto:</strong>
+        <a href="[URL de tu proyecto StackBlitz]"
+          >https://stackblitz.com/edit/web-platform-qxwaj7gz?file=index.html</a
+        >
+      </p>
+      <p>
+        <strong>Repositorio GitHub:</strong>
+        <a href="[URL de tu repositorio]"
+          >https://github.com/flooki10/Visualizacion_datos</a
+        >
+      </p>
+      <p><strong>Fecha:</strong> 27/04/2025</p>
+    </div>
+
+    <h2>Gráficos con Google Sheets</h2>
+
+    <div class="two-columns">
+      <div class="chart-container">
+        <h3>Gráfico 1: Emisiones Totales por País (Barras Horizontales)</h3>
+        <p class="chart-description">
+          Comparación de las emisiones absolutas de CO₂ entre los principales
+          países emisores.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=849995992&amp;format=interactive"
+        ></iframe>
+      </div>
+
+      <div class="chart-container">
+        <h3>Gráfico 2: Proporción de Emisiones Globales (Circular)</h3>
+        <p class="chart-description">
+          Distribución porcentual de las emisiones entre los mayores países
+          emisores.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=1635332117&amp;format=interactive"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="chart-container">
+        <h3>Gráfico 3: Comparativa Emisiones Totales vs Per Cápita</h3>
+        <p class="chart-description">
+          Relación entre emisiones totales y emisiones per cápita por país.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=1990238393&amp;format=interactive"
+        ></iframe>
+      </div>
+
+      <div class="chart-container">
+        <h3>Gráfico 4: Mapa Geográfico de Emisiones</h3>
+        <p class="chart-description">
+          Visualización geográfica del impacto de emisiones por país (tamaño =
+          volumen, color = tendencia).
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=795925579&amp;format=interactive"
+        ></iframe>
+      </div>
+    </div>
+
+
+    <footer>
+      Proyecto de Visualización de Datos - 27/04/2025 | Realizado por walid sabhi
+    </footer>
+
+    <script>
+      // Ajuste automático para iframes de DataWrapper
+      window.addEventListener('DOMContentLoaded', function () {
+        const iframes = document.querySelectorAll('iframe[src*="datawrapper"]');
+        iframes.forEach((iframe) => {
+          iframe.style.height = iframe.getAttribute('height') + 'px';
+        });
+      });
+    </script>
+  </body>
+</html>
