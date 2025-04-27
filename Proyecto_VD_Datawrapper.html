@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualización de Datos - Emisiones CO2</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 25px;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      h1,
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+      }
+      h1 {
+        text-align: center;
+        color: #2980b9;
+      }
+      .chart-container {
+        margin: 30px 0;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .chart-container h3 {
+        margin-top: 0;
+        color: #16a085;
+      }
+      .chart-description {
+        font-style: italic;
+        color: #7f8c8d;
+        margin-bottom: 15px;
+      }
+      .header-info {
+        background: #ecf0f1;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #7f8c8d;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+      }
+      iframe {
+        border: none;
+        margin: 0 auto;
+        display: block;
+      }
+      .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      @media (max-width: 768px) {
+        .two-columns {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Visualización de Datos - Emisiones de CO2</h1>
+
+    <div class="header-info">
+      <p><strong>Nombre completo:</strong> Walid Sabhi</p>
+      <p>
+        <strong>URL del proyecto:</strong>
+        <a href="[URL de tu proyecto StackBlitz]"
+          >https://stackblitz.com/edit/web-platform-qxwaj7gz?file=index.html</a
+        >
+      </p>
+      <p>
+        <strong>Repositorio GitHub:</strong>
+        <a href="[URL de tu repositorio]"
+          >https://github.com/flooki10/Visualizacion_datos</a
+        >
+      </p>
+      <p><strong>Fecha:</strong> 27/04/2025</p>
+    </div>
+
+    <h2>Gráficos con Google Sheets</h2>
+
+    <div class="two-columns">
+      <div class="chart-container">
+        <h3>Gráfico 1: Emisiones Totales por País (Barras Horizontales)</h3>
+        <p class="chart-description">
+          Comparación de las emisiones absolutas de CO₂ entre los principales
+          países emisores.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=849995992&amp;format=interactive"
+        ></iframe>
+      </div>
+
+      <div class="chart-container">
+        <h3>Gráfico 2: Proporción de Emisiones Globales (Circular)</h3>
+        <p class="chart-description">
+          Distribución porcentual de las emisiones entre los mayores países
+          emisores.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=1635332117&amp;format=interactive"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="two-columns">
+      <div class="chart-container">
+        <h3>Gráfico 3: Comparativa Emisiones Totales vs Per Cápita</h3>
+        <p class="chart-description">
+          Relación entre emisiones totales y emisiones per cápita por país.
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=1990238393&amp;format=interactive"
+        ></iframe>
+      </div>
+
+      <div class="chart-container">
+        <h3>Gráfico 4: Mapa Geográfico de Emisiones</h3>
+        <p class="chart-description">
+          Visualización geográfica del impacto de emisiones por país (tamaño =
+          volumen, color = tendencia).
+        </p>
+        <iframe
+          width="100%"
+          height="371"
+          seamless
+          frameborder="0"
+          scrolling="no"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRM8CCLyv-3mWQYm20QBrbhWrLWRDqjwGLAvqi_dPECgfukYOWsm9wDgSlLYfGT0qrJDPP_YvPFOAza/pubchart?oid=795925579&amp;format=interactive"
+        ></iframe>
+      </div>
+    </div>
+
+    <h2>Gráficos con DataWrapper</h2>
+
+<div class="chart-container">
+  <h3>Emisiones Totales por País</h3>
+  <p class="chart-description">Ranking detallado de países por emisiones totales de CO₂ en millones de toneladas.</p>
+  <iframe title="Emisiones Totales por País" aria-label="Bar Chart" id="datawrapper-chart-Ju7EU" src="https://datawrapper.dwcdn.net/Ju7EU/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="371" data-external="1"></iframe>
+  <p class="data-source">Fuente: Datawrapper - Visualización interactiva</p>
+</div>
+
+<div class="two-columns">
+  <div class="chart-container">
+    <h3>Proporción de Emisiones Globales</h3>
+    <p class="chart-description">Distribución porcentual de emisiones entre los principales países emisores.</p>
+    <iframe title="Gráfico Election Donut: Proporción de Emisiones Globales" aria-label="Election Donut" id="datawrapper-chart-8I5rw" src="https://datawrapper.dwcdn.net/8I5rw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="371" data-external="1"></iframe>
+    <p class="data-source">Fuente: Datawrapper - Visualización interactiva</p>
+  </div>
+
+  <div class="chart-container">
+    <h3>Comparativa de Emisiones y Variación</h3>
+    <p class="chart-description">Relación entre emisiones totales y su variación porcentual anual.</p>
+    <iframe title="Gráfico Columnas múltiples" aria-label="Multiple Columns" id="datawrapper-chart-r2SMf" src="https://datawrapper.dwcdn.net/r2SMf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="371" data-external="1"></iframe>
+    <p class="data-source">Fuente: Datawrapper - Visualización interactiva</p>
+  </div>
+</div>
+
+<div class="chart-container">
+  <h3>Emisiones de CO₂ (kt)</h3>
+  <p class="chart-description">Emisiones de dióxido de carbono en kilotoneladas a lo largo del tiempo.</p>
+  <iframe title="Gráfico de barras" aria-label="Column Chart" id="datawrapper-chart-XzGGJ" src="https://datawrapper.dwcdn.net/XzGGJ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="371" data-external="1"></iframe>
+  <p class="data-source">Fuente: Datawrapper - Visualización interactiva</p>
+</div>
+
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+</script>
+
+    <footer>
+      Proyecto de Visualización de Datos - 27/04/2025 | Realizado por walid sabhi
+    </footer>
+
+    <script>
+      // Ajuste automático para iframes de DataWrapper
+      window.addEventListener('DOMContentLoaded', function () {
+        const iframes = document.querySelectorAll('iframe[src*="datawrapper"]');
+        iframes.forEach((iframe) => {
+          iframe.style.height = iframe.getAttribute('height') + 'px';
+        });
+      });
+    </script>
+  </body>
+</html>
